@@ -1,6 +1,6 @@
 # TODO – needforheat-presence-detector-firmware
 
-Open work for this repository, distilled from the old NeedForHeat Trello board (paraphrased and regrouped) and from the 2026 maintenance review.
+Open work for this repository, distilled from the old NeedForHeat Trello board, including the discussions on the cards (paraphrased and regrouped) and from the 2026 maintenance review.
 
 Items that touch several repositories are written out in full in one *lead* repository; the others list them with a link (→). Keep the details up to date in the lead repository only.
 
@@ -10,7 +10,7 @@ Items that touch several repositories are written out in full in one *lead* repo
 
 ## Soon: robustness and correctness
 
-- [ ] <a id="btstab"></a>**Stable Bluetooth presence detection.** Research and fix the instability of Bluetooth presence detection. Also affects: needforheat-living-room-module-firmware, needforheat-p1-reader-firmware. *(Trello #222, #769)*
+- [ ] <a id="btstab"></a>**Stable Bluetooth presence detection.** Research and fix the instability of Bluetooth presence detection. On the old P1 gateway, ESP-NOW and Bluetooth presence detection seemed to interfere with TLS certificate checks (shared Wi-Fi mutex); check the mbedTLS threading settings and mutex use. Also affects: needforheat-living-room-module-firmware, needforheat-p1-reader-firmware. *(Trello #222, #769)*
 - [ ] → Upgrade to ESP-IDF 5.5 (WPA3, Wi-Fi 6) — see [needforheat-generic-firmware](https://github.com/energiegedrag-nl/needforheat-generic-firmware/blob/main/TODO.md#idf) *(Trello #806)*
 - [ ] → Let generic and device-specific code share buttons — see [needforheat-generic-firmware](https://github.com/energiegedrag-nl/needforheat-generic-firmware/blob/main/TODO.md#buttons) *(Trello #833)*
 
